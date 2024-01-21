@@ -3206,6 +3206,8 @@ with pkgs;
     ammonite_2_13;
   ammonite = if scala == scala_2_12 then ammonite_2_12 else ammonite_2_13;
 
+  amnezia-client = qt6.callPackage ../by-name/am/amnezia-client/package.nix {};
+
   amp = callPackage ../applications/editors/amp { };
 
   ams = callPackage ../applications/audio/ams { };
